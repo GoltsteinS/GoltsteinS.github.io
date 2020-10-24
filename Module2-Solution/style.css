@@ -1,0 +1,86 @@
+/****** This section sets the styling for the general tags *****/
+* {
+	box-sizing: border-box; /* Sets the standard for box sizing on all elements */
+}
+
+h1 {
+	text-align: center; /* Centering the text for Our Menu */
+}
+
+section { /* Assuming no sections for other purposes will be used in this document in the future */
+	background-color: #EEEEEE; /* Light gray background of the sections */
+	border: 1px solid black; /* Sets the border as instructed in assignment point 14 */
+	padding: 0px 0px 5px 5px; /* Sets the padding of the gray box (section) */
+	position: relative; /* As an anchor for the positioning of the Chicken, Beef and Sushi section titles */
+}
+
+/***** This section sets the styling for defined classes *****/
+
+/* General styling of the Chicken, Beef and Sushi title boxes */
+.section_title_general { 
+	font-size: 2em;
+	margin: -1px -1px 0px 0px; /*Offset of the magins to make the boarders of Chicken, Beef and Sushi overlap with their section's borders as instructed in assignmetn point 12 */
+	width: 150px;
+	text-align: center;
+	color: white;
+	border: 1px solid black; /* Sets the border as in structed in assignment point 14 */
+	position: absolute; /* Using absolute positioning as instructed in assignmetn point 12 */
+	right: 0;
+
+}
+
+.section_text_general{
+	margin: 50px 5px 1px 5px; /* Pushes the text down so it doesn't overlap with the title, also creates spacing on the right, bottom and left side */
+}
+
+/***** This section sets the styling for defined IDs *****/
+
+/* Specific styling for the Chicken title box */
+#section_title_chicken {
+	background-color: red; 
+}
+
+/* Specific styling for the Beef title box */
+#section_title_beef {
+	background-color: blue;
+}
+
+/* Specific styling for the sushi title box */
+#section_title_sushi {
+	background-color: green;
+}
+
+/***** This section of the style sheet sets the breakpoints for the resposive layout, assumes a 12-column grid ******/
+
+/* Desktop view: */
+@media (min-width: 992px) {
+	.des-col-4 {
+		float: left;
+		width: 33.33%;
+		padding: 5px 5px 5px 5px;
+	}
+}
+/* Tablet view: */
+@media (min-width: 768px) and (max-width: 991px) {
+	/* General settings for the classes in the tablet view */
+	.tab-col-6, .tab-col-12 {
+		float: left;
+		padding: 5px 5px 5px 5px;
+	}
+	/* Specific settings for the two colums on the top */
+	.tab-col-6 {
+		width: 50%;
+	}
+	/* Specific settings for the column at the bottom */
+	.tab-col-12 {
+		width: 100%;
+	}
+}
+/* Mobile view */
+@media (max-width: 767px) {
+	.mob-col-12 {
+		float: left;
+		width: 100%;
+		padding: 5px 5px 5px 5px;
+	}
+}
