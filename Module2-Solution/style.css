@@ -1,6 +1,7 @@
 /****** This section sets the styling for the general tags *****/
 * {
 	box-sizing: border-box; /* Sets the standard for box sizing on all elements */
+	font-family: Arial, Helvetica, sans-serif;
 }
 
 h1 {
