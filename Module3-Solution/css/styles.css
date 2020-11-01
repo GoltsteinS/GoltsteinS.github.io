@@ -1,0 +1,15 @@
+.site-section {
+	background-color: gray;
+	min-height: 1000px;
+	margin-bottom: 20px;
+}
+
+#main-container {
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+#nav-list {
+	text-align: center;
+	background-color: #B3D0EB;
+}
